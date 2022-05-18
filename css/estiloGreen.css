@@ -1,0 +1,77 @@
+:root{
+    --dark-color: #143033;
+    --medium-color: #307970 ;
+    --light-color: #58c7b7 ;
+    --superlight-color:#d6f3f1 ;
+    --ligth-color-blur: rgba(88, 199, 183, 0.5);
+} 
+body{
+    background: url("../img/GreenLongL.png");
+} /*
+.imgFondo{
+    background-image: url("../img/GreenGScreen.jpg");
+    
+}*/
+
+#global{
+    background: var(--superlight-color) /*whitesmoke*/;
+}
+#logo{
+    background: var( --medium-color) /*#c5325c*/;
+}
+#logo h1{
+    color: var(--light-color);
+}
+#menu{
+    background: var(--dark-color); 
+    color:var(--superlight-color);
+}
+
+#menu ul li:hover, #footer-ul li:hover{
+    background:var(--medium-color);
+}
+
+#menu ul li a, #footer-ul li a{
+    color:var(--superlight-color);
+}
+
+.post h2{
+    color:var(--dark-color);     
+}
+
+.btn-more{
+    background: var(--medium-color);
+    color: var(--light-color);
+}
+.btn-more:hover{
+    background: var(--dark-color);
+}
+#sidebar, #theme-selector{
+    background: var(--ligth-color-blur);
+}
+
+#sidebar h4{
+    color:var(--dark-color);
+}
+
+form input[type="submit"]{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+form input[type="submit"]:hover{
+    background: var(--medium-color);
+}
+
+footer{
+    background: var(--dark-color); 
+    color:var(--superlight-color);
+}
+.bx-wrapper {
+    border: 20px solid var(--superlight-color);
+    background: var(--superlight-color);
+}
+
+.subir{
+    background: var(--light-color);
+    color: var(--medium-color);
+}

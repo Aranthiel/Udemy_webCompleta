@@ -1,0 +1,263 @@
+/* el selector * es universal */ 
+*{
+    box-sizing: border-box; /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    padding:0;
+    margin: 0;
+}
+
+html{
+    font-size: 65.5%;
+    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
+/* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+body{ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+/*
+.imgFondo{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}*/
+#theme-selector{
+    position: fixed;
+    top:40%;
+    width:5rem;
+    height: 13rem; 
+}
+#toGreen, #toRed, #toBlue {
+    width:3rem;
+    height:3rem;
+    border-radius: 99px;
+    display:block;
+    margin: 1rem auto;
+    cursor:pointer;
+}
+#toGreen {
+    background: #307970
+}
+#toBlue {
+    background:#0f266e;
+}
+#toRed {
+    background: #933275;
+}
+
+#global{
+    width:80%;
+    margin:0px auto;
+    margin-top: 3rem;    
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+#logo{
+    border-radius: 8rem;
+    width: 38rem;
+    height: 8rem;
+    float:left;
+    margin: 2rem;
+}
+#logo h1{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    line-height:8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: sans-serif;
+    font-size: 2rem;
+    width:100%;
+    height: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: end;
+}
+#menu ul{
+    line-height: 6rem;
+    list-style: none; 
+    margin-right: 2rem;
+}
+#menu ul li, #footer-ul li{
+    display:inline-block;
+    padding:0 2rem;
+    transition: all 300ms;
+   
+    /*border:var(--superlight-color) 1px dotted;*/
+}
+#menu ul li a, #footer-ul li a{
+    text-decoration: none;  
+}
+
+.slider img{
+    width:100%;
+    margin-bottom: 2rem;
+}
+.container {
+    width: 80%;
+    height: 50rem;
+    overflow: hidden;
+    margin:0px auto;
+    position: relative;
+}
+.container > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#content{
+    display: inline-flex;
+    width:100%;
+}
+#posteo{
+    /* background: lightblue;
+    border: 1px rgb(78, 169, 199) solid; */
+    width: 60%;
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+}
+.post .date{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(150, 150, 150);
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    display: block;
+}
+.post p{
+    font-size: 1.8rem;
+    line-height:2.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+.post h2{
+    font-size: 3rem; 
+}
+.btn-more{
+    width:15rem;
+    border-radius: 8rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+    text-decoration: none;
+    text-align: center;    
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height:4rem;
+}
+.btn-more:hover{
+    transform: scale(1.05);
+}
+
+#sidebar{
+    width: 40%;
+    float: right;
+    margin: 2rem;   
+    align-items:  center;
+    padding:2rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#sidebar h4{
+    margin-bottom: 2rem;
+    line-height:1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#login{
+    margin:1rem 0 6rem 0;
+}
+form input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    width:90%;
+    margin-bottom: 1rem;
+}
+form input[type="submit"]{
+    width:10rem;
+    border-radius: 8rem;
+    border:none;
+    float:right;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    cursor:pointer;
+    
+    text-decoration: none;
+    text-align: center;    
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 1.2rem;    
+    line-height:2.5rem;
+}
+form input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+#sidebar img{
+    width:100%;
+    margin-bottom: 2rem;
+}
+#sidebar p{
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.subir{
+    text-decoration: none;
+    display: block;
+    float: right;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 90px;
+    padding: 1rem;
+}
+footer{
+    font-family: sans-serif;
+    font-size: 2rem;
+    width:80%;
+    height: 8rem;
+    text-transform: uppercase;
+    margin:0px auto;
+    text-align: center;
+}
+footer p{
+    margin-left: 2rem;
+    line-height:4rem;
+}
+#footer-ul{
+    font-size: 1rem;
+    line-height: 4rem;
+    list-style: none; 
+    margin-right: 2rem;
+}
+
+
+
