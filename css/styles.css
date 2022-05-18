@@ -127,7 +127,7 @@ body{
     display: inline-flex;
     width:100%;
 }
-#posteo{
+#posteo, #box{
     /* background: lightblue;
     border: 1px rgb(78, 169, 199) solid; */
     width: 60%;
@@ -143,14 +143,19 @@ body{
     margin-top: 0.5rem;
     display: block;
 }
-.post p{
+.post p, #box p{
     font-size: 1.8rem;
     line-height:2.5rem;
     margin-top: 1rem;
     text-align: justify;
 }
-.post h2{
-    font-size: 3rem; 
+.post h2, #box h2{
+    font-size: 3rem;     
+    text-transform:uppercase;
+}
+#box h3{
+    font-size: 2rem;     
+    text-transform:uppercase;
 }
 .btn-more{
     width:15rem;
@@ -257,4 +262,8 @@ footer p{
     line-height: 4rem;
     list-style: none; 
     margin-right: 2rem;
+}
+
+#acordeon{
+    margin-top: 2rem;
 }
