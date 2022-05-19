@@ -266,4 +266,8 @@ footer p{
 
 #acordeon{
     margin-top: 2rem;
-}
+}/*
+.ui-widget-content{
+    border:1px solid #ddd;
+    background:greenyellow;
+    color:#333} */

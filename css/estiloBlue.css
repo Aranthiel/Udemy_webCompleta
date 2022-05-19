@@ -1,8 +1,10 @@
 :root{
     --dark-color: #00092a;
     --medium-color: #0f266e ;
+    --light-medium-color: #284395;
     --light-color: #5775b5 ;
     --superlight-color:#d0d8f3 ;
+    --not-white-color: #e4e8fb;
     --ligth-color-blur: rgba(87, 117, 181, 0.5);
 }
 body{
@@ -34,7 +36,7 @@ body{
     color:var(--superlight-color);
 }
 
-.post h2{
+.post h2, #box h2{
     color:var(--dark-color);     
 }
 
