@@ -266,8 +266,18 @@ footer p{
 
 #acordeon{
     margin-top: 2rem;
-}/*
-.ui-widget-content{
-    border:1px solid #ddd;
-    background:greenyellow;
-    color:#333} */
+}
+#reloj{
+    display: block;
+    width: 80rem;
+}
+#hs, #min, #sc{
+    color: var(--superlight-color);
+    background: var(--medium-color);
+    border-radius: 75px;  
+    width:30%;
+    margin:2rem;
+    padding:5rem;
+    font-size: 12rem;
+    text-align: center;
+}
