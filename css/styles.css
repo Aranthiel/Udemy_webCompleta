@@ -143,7 +143,7 @@ body{
     margin-top: 0.5rem;
     display: block;
 }
-.post p, #box p{
+.post p, #box p, #box span{
     font-size: 1.8rem;
     line-height:2.5rem;
     margin-top: 1rem;
@@ -197,8 +197,10 @@ body{
     margin:1rem 0 6rem 0;
 }
 form input[type="text"], 
-input[type="email"], 
-input[type="password"] {
+form input[type="email"], 
+form input[type="password"],
+form input[type="number"], 
+form select {
     padding: 0.5rem;
     border-radius: 0.2rem;
     border: none;
@@ -280,4 +282,7 @@ footer p{
     padding:5rem;
     font-size: 12rem;
     text-align: center;
+}
+#formulario{
+    margin-top: 2rem;
 }

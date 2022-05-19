@@ -8,7 +8,5 @@ $(document).ready(function(){
       $("#hs").html(hora);~
       $("#min").html(minutos);
       $("#sc").html(segundos);
-    })
-
-
+    });
   });

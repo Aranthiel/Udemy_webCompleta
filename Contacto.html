@@ -7,17 +7,18 @@
     <title>Proyecto con javaScript</title>
     
     <!-- Estilos Css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/estiloBlue.css" id="theme">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/estiloBlue.css" id="theme">
 
     <!-- ScrollUp Suave-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Moment js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/locale/es.min.js" ></script>
+    
+    <!-- Plugin validacion -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <!-- mis Scripss-->
-    <script src="./js/main.js"></script>
-    <script src="./js/contacto.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/contacto.js"></script>
 
 </head>
 <body>
@@ -63,9 +64,71 @@
           <div id="box">
             <!-- Formulario de contacto con validacion -->
             <h2>Contacto</h2>
-            <div id="reloj">
-               
-            </div>
+            <form action="#" method="POST" id="formulario" onsubmit="return false;">
+                <div>
+                    <label for="nombre "> </label> <!-- Importante el atributo FOR de la etiqueta label debe ser igual que los atributoss id y Name de la equiqueta input -->
+                    <span class="etiqueta">Nombre: </span> <br> <!-- Coloca el nombre delante del campo del formulario que  vamos a utilizar-->
+                    <input type="text" id="nombre" name="nombre" placeholder="Coloca tu nombre" data-validation="alphanumeric" />
+                        <!-- la etiqueta IMPUT siempre lleva el atributo type que declara el TIPO de elemento que se mostrara en el formulario-->
+                        <!-- el atributo "name" de la etiqueta imput permite que la informacion que se envia a la URL sea comprensible-->
+                        <!-- el atributo Autocompletar permite que el navegador complete automaticamente con info que el usuario ya habia cargado antes en otro formulario
+                        es importante el valor del atributo este en la lista de valores para que el navegador sepa que informacion debe colocar-->
+                        <!-- el atributo required le indica al usuario si es obligatorio o no completar este campo, ya que si no esta completo todos los campos 
+                        "requeridos" el formulario no se puede enviar -->
+                        <!-- el atributo placeholder pone un texto de ejemplo que le indica al usuario que tipo de informacíon deberia ir en ese campo -->
+                    <span id="e_nombre"></span>            
+                </div>
+                <br>
+    
+                <div>
+                    <label for="apellido"></label>
+                    <span class="etiqueta">Apellido: </span> <br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Coloca tu apellido" data-validation="alphanumeric" />
+                    <span id="e_apellido"></span>  
+                </div>            
+                <br>
+    
+                <div>
+                    <label for="email"></label>
+                    <span class="etiqueta">E-mail: </span> <br>               
+                    <input type="email" id="email" name="email" placeholder="Coloca tu email" data-validation="email"/>
+                    <span id="e_email"></span>  
+                </div> 
+                <br>
+
+                <div>
+                    <label for="sexo"></label>
+                    <span class="etiqueta">Sexo: </span> <br>               
+                    <select type="text" id="sexo" name="sexo" data-validation="required" > 
+                        <option value="noindica">Prefiero no decirlo</option>                        
+                        <option value="mujer">Mujer</option>
+                        <option value="nobinario">No binario</option>                        
+                        <option value="trans">Transexual</option>
+                        <option value="hombre">Hombre</option>
+                    </select>
+                    <span id="e_sexo"></span>  
+                </div> 
+                <br>
+                
+                <div>
+                    <label for="fnac"></label>
+                    <span class="etiqueta">Fecha de nacimiento: </span> <br>               
+                    <input type="text" id="fnac" name="fnac" placeholder="Coloca tu fecha de nacimiento" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+                    <span id="e_fnac"></span>  
+                </div> 
+                <br>
+                <div>
+                    <label for="edad"></label>
+                    <span class="etiqueta">Edad: </span>  <br>              
+                    <input type="number" id="edad" name="edad" placeholder="Coloca tu edad" data-validation="number"/>
+                    <span id="e_edad"></span>  
+                </div> 
+                <br>
+    
+                <input type="submit" value="Enviar" id="submit"> <!--crea un boton que envía la info de los formularios anteriores 
+                    a la url, que despues se puede tomar con js para enviarlo a la basa de datos-->
+                    <!-- esta etiqueta no necesita cerrarse-->
+            </form>
 
         </div>
           <aside id="sidebar">
