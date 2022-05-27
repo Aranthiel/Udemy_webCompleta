@@ -52,19 +52,5 @@
     console.log(publicacion);
     $("#posteo").append(publicacion);
     });
-
-    // loguin falso
-    $("#login form").submit(function(){
-      //alert("Has tocado el boton ingresar");
-      var fname = $("#name").val();
-      localStorage.setItem("form_name",  fname);
-      var fmail = $("#mail").val();
-      localStorage.setItem("form_mail",  fmail);
-      var fpassword = $("#password").val();
-      localStorage.setItem("form_password",  fpassword);
-      var temaColor = $("#theme").attr("href");
-      console.log(temaColor);
-      localStorage.setItem("theme",temaColor);
-      
-    });
+    
   });

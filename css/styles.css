@@ -286,3 +286,48 @@ footer p{
 #formulario{
     margin-top: 2rem;
 }
+span.help-block.form-error {
+    font-size: 5px;
+    color: red;
+    font-style: italic;
+    width: 60%;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: var(--dark-color);
+    color: var(--not-white-color);
+    display: flow-root;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+span.ui-icon.ui-icon-circle-triangle-e, span.ui-icon.ui-icon-circle-triangle-w {
+    margin: 2rem;
+    text-align: center;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: var(--dark-color);
+    color: var(--not-white-color);
+    display: flow-root;    
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+table.ui-datepicker-calendar {
+    background: var(--not-white-color);
+    width: 20rem;
+    height: 12rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+}
+a.ui-state-default {
+    text-decoration: none;
+    color: var(--dark-color);
+}

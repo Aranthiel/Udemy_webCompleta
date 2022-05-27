@@ -1,6 +1,16 @@
 $(document).ready(function(){
-    // acordeon
+    
     alert("se cargó correctamente el fichero contacto.js"); 
-    var reloj = moment().format("hh:mm:ss");
-    $("#reloj").html(reloj);
+
+    //plugin de calendario
+    $("#fnac").datepicker({
+      dateFormat:"dd-mm-yy"
+    });
+
+    // validación
+    $.validate({
+      lang: "es"
+    });
+
+    //
   });
